@@ -1,0 +1,18 @@
+// Key
+name, email, date, terms accepted, submitted, completion status, score, possible score
+
+1. Joshua Bloom , josh@school.org , 06/26/2017 , true , true , 100% , 2 , 4
+2. Lionel Messi , messi@barca.com , 06/20/2017, true, true, 100%, 4, 4
+3. Steven Colbert , steven@school.org , 06/24/2017 , true , true , 100% , 3 , 4
+
+// Object
+var student = {
+    name: "",
+    email: "",
+    date: "",
+    acceptTerms: false,
+    submitted: false,
+    completion: "0%",
+    userScore: 0,
+    possibleScore: 0
+}

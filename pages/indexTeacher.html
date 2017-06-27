@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML HEADER -->
+    <head>
+        <title>Mr. Bloom's Computer Science Class</title>
+        
+        <!-- META DATA, IMPORT BOOTSTRAP (CSS and JS), JQUERY, FONTS, ICONS, etc... -->
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="../styles/teacherStyle.css"/>
+        
+        <!-- JavaScript and jQuery needed for popover() function -->
+        <script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script language="JavaScript" type="text/javascript" src="../main.js"></script>
+    </head>
+    
+    <!-- HTML BODY -->
+	<body>
+        <div class="container-fluid">
+            
+            <!-- TOP HEADING -->
+            <div class="container-top">
+                <div class="page-header">
+                    <h1 id="title">Introduction to HTML and CSS</h1>
+                    <h3 id="subtitle">Web-Development, Fall 2017</h3>
+                </div>
+              
+                <!-- NAVIGATION MENU -->                <!-- navbar compatible with small (mobile) and large (desktop) screens -->
+                <section id="navigation-bar">
+                    <ul id="nav" class="form-inline">
+                        <div class="form-group">        <!-- group icons with text so don't get separated when screen size shrinks --> 
+                            <li class="list-group-item-action">
+                                <a href="../index.html"><i class="fa fa-lg fa-graduation-cap" aria-hidden="true"></i></a> 
+                                <a href="../index.html" class="nav-text">STUDENT</a>    
+                            </li>                                                 <!-- aria-hidden takes a Boolean value, and "true" -->
+                        </div>                                                    <!-- tells screen-readers to ignore the element -->
+                        <div class="form-group">
+                            <li class="list-group-item-action">
+                                <a href="indexTeacher.html"><i class="fa fa-lg fa-male"></i></a>
+                                <a href="indexTeacher.html" class="nav-text">TEACHER</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <hr>            <!-- horizontal line used to "define a thematic change in the content" (W3 Schools) -->
+                </section>          <!-- in this case, the page-header section is ending and the main content is beginning --> 
+            </div>   
+    
+            <!-- MAIN CONTENT -->
+            <div class="container-main">
+                <section id="lesson-explanation">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2>Lesson 1</h2>
+                            <h3>Source/Inspiration: <a href="https://gist.github.com/jmk2142/0e2e3c64cc5b7fb13c7d1ba66a51f579" target="_blank">Jin Kuwata's Introductory Web-Development Lesson</a></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <br>
+                            <img src="../images/Tinker%20Activity%20Icon.png" class="img-thumbnail" alt="Learning Activity">
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <h3>Introduce Tinker Activity</h3>
+                                    <p><strong>TINKER</strong>: <em>attempt to repair or improve something in a casual or desultory way, often to no useful effect.</em></p>
+                                    <p>It's funny that the problem is called a "tinker" problem in that tinkering is usually messing around with stuff without a very planned way. I think, when we use the word tinker, it's really to emphasize the spirit of the activity; that is to not feel too pressured into treating it like a test of your ability. It's really meant to be an opportunity for you to explore and have fun messing with stuff while using the guided questions to challenge your understanding. So in some ways - while the spirit is about tinkering - I actually do want you to explore this in a directed way. That is:</p>
+                                    <ol>
+                                        <li>Manipulate things to understand the causal effect and relationships it has on the results.</li>
+                                        <li>Think about the multiple manipulations you make to generalize certain key patterns that manifest across different episodes.</li>
+                                        <li>To generate hypotheses about how stuff works, and to test those hypotheses (through manipulation) to confirm or reject your ideas and refine.</li>
+                                    </ol>
+                                    <p>As such, for each tinker problem which will be a "full" example - I will be providing you with certain guiding questions to help you direct your attention and activities to the hidden things that are present. Think about it as if you just discovered a strange and fascinating new bug crawling across your table. You just want to poke it to see what it does. And I encourage you to do so.</p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <h3>Class Results</h3>
+                                    <br><br><br>
+                                    <p id="classResults"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <br><br>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" class="img-thumbnail" alt="Teacher Demo">
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                            <br><h3>Teacher Demonstration</h3>
+                            <h5>Possible HTML Changes</h5>
+                            <ul>
+                                <li>Mess around with the sequence of different tags. How does SEQUENCE affect the visual display of HTML elements?</li>
+                                <li>Change the hierarchy, the parent-child relationships between different tags. What are some ways that the hierarchy of your tags will affect the end result / visual output?</li>
+                                <li>Add/remove/manipulate various elements, ids, classes, attributes. What did you do and what did you discover in terms of the GENERALIZABLE patterns?</li>
+                            </ul>
+                            <h5>Possible CSS Changes</h5>
+                            <ul>
+                                <li>Try out different types of the same value, like different ways to define color (#fff, white, etc...)</li>
+                                <li>Try different values for the same attribute, like set "text-decoration" to "none" or "font-style" to "bold" or "oblique"</li>
+                                <li>Change the hierarchy of HTML class/element selectors and see what happens</li>
+                                <li>Use an "id" to select a particular element to style</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="JSFiddle-code-example">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Demo Program in JSFiddle</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <iframe width="100%" height="500" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                        <div class="col-lg-3">
+                            <iframe width="100%" height="500" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                        <div class="col-lg-5">
+                            <iframe width="100%" height="500" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="container-bottom">
+                <section id="navbar-support-resources">
+                    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Support Resources</a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="list-group-item-action">
+                                    <a href="https://www.freecodecamp.com/map-aside#nested-collapseHTML5andCSS" target="_blank">
+                                        <i class="fa fa-lg fa-free-code-camp" aria-hidden="true"></i>Free Code Camp</a>
+                                </li>
+                                <li class="list-group-item-action">
+                                    <a href="https://codepen.io/" target="_blank">
+                                        <i class="fa fa-lg fa-codepen" aria-hidden="true"></i>CodePen Text Editor</a>
+                                </li>
+                                <li class="list-group-item-action">
+                                    <a href="https://jsfiddle.net/" target="_blank">
+                                        <i class="fa fa-lg fa-jsfiddle" aria-hidden="true"></i>JSFiddle Text Editor</a>
+                                </li>
+                                <li class="list-group-item-action">
+                                    <a href="https://stackoverflow.com/" target="_blank">
+                                        <i class="fa fa-lg fa-stack-overflow" aria-hidden="true"></i>Stack Overflow Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </section> 
+            </div>  
+        </div>
+    </body>
+</html>

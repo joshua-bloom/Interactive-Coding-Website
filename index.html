@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML HEADER -->
+	<head>
+        <title>Mr. Bloom's Computer Science Class</title>
+        
+        <!-- META DATA, IMPORT BOOTSTRAP (CSS and JS), JQUERY, FONTS, ICONS, etc... -->
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="styles/studentStyle.css"/>
+        
+        <!-- JavaScript and jQuery needed for popover() function -->
+        <script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script language="JavaScript" type="text/javascript" src="main.js"></script>
+	</head>
+    
+    <!-- HTML BODY -->
+	<body>
+        <div class="container-fluid">
+            
+            <!-- TOP HEADING -->
+            <div class="container-top">
+                <div class="page-header">
+                    <h1 id="title">Introduction to HTML and CSS</h1>
+                    <h3 id="subtitle">Web-Development, Fall 2017</h3>
+                </div>
+              
+                <!-- NAVIGATION MENU -->                <!-- navbar compatible with small (mobile) and large (desktop) screens -->
+                <section id="navigation-bar">
+                    <ul id="nav" class="form-inline">
+                        <div class="form-group">        <!-- group icons with text so don't get separated when screen size shrinks --> 
+                            <li class="list-group-item-action">
+                                <a href="index.html"><i class="fa fa-lg fa-graduation-cap" aria-hidden="true"></i></a> 
+                                <a href="index.html" class="nav-text">STUDENT</a>    
+                            </li>                                                 <!-- aria-hidden takes a Boolean value, and "true" -->
+                        </div>                                                    <!-- tells screen-readers to ignore the element -->
+                        <div class="form-group">
+                            <li class="list-group-item-action">
+                                <a href="pages/indexTeacher.html"><i class="fa fa-lg fa-male"></i></a>
+                                <a href="pages/indexTeacher.html" class="nav-text">TEACHER</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <hr>            <!-- horizontal line used to "define a thematic change in the content" (W3 Schools) -->
+                </section>          <!-- in this case, the page-header section is ending and the main content is beginning --> 
+            </div>   
+    
+            <!-- MAIN CONTENT -->
+            <div class="container-main">
+                
+                <section id="lesson-explanation">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 id="lesson-title">Lesson 1</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <br><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" class="img-thumbnail" alt="Lesson 1 Overview">
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                            <h3>Overview</h3>
+                            <p>To get a feel for HTML and CSS, we're going to "tinker" with an existing program rather than build one from scratch one Day 1. What this means is that you'll be manipulating and thinking about a very simple and silly webpage. I will provide you with a few guiding questions to help you direct your attention and activities to the key patterns and relationships in the code, but I encourage you to formulate your own questions and ideas about how the code works and to test out your hypotheses.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <br><br>
+                            <img src="images/Tinker%20Activity%20Icon.png" class="img-thumbnail" alt="Learning Activity">
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                            <br><h3>Tinker Activity</h3>
+                            <ul>
+                                <li>Start by opening the program. Click the "Edit in JSFiddle" button below.</li>
+                                <li>Then, <strong>compare</strong> what you see in the code and <strong>map</strong> the relationships between the code and output.</li>
+                                <li>After you're vaguely familiar with the program, use the guiding prompts and questions to <strong>manipulate</strong> the actual code <strong>one thing at a time</strong> and see what happens.</li>
+                                <li>Finally, <strong>articulate</strong> and share your understandings and findings with me by answering the questions below.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                    
+                <section id="student-work">
+                    <fieldset class="form-group row">
+                        <legend>Guided Tinkering with HTML</legend>
+                        <div class="col-lg-6">
+                            <iframe width="100%" height="320" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <label for="question1" class="col-lg-2 col-form-label">Question 1</label>
+                                <div class="col-lg-10">
+                                    <small id="Question1Help" class="form-text text-muted">Change the OL tags to UL tags in the HTML code. What happens when you do that?</small>
+                                    <input type="text" class="form-control" id="question1" aria-describedby="Question1Help" placeholder="" onchange="setAnswer(event)">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label for="question2" class="col-lg-2 col-form-label">Question 2</label>
+                                <div class="col-lg-10">
+                                    <small id="Question2Help" class="form-text text-muted">Make a new list of the top 3 things cats love and copy-paste your html code here.</small>
+                                    <textarea class="form-control" id="question2" aria-describedby="Question2Help" rows="3" onchange="setAnswer(event)"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label for="question3" class="col-lg-2 col-form-label">Question 3</label>
+                                <div class="col-lg-10">
+                                    <small id="Question3Help" class="form-text text-muted">Delete the closing H3 tag in the "intro" section. What happens when you do that?<br>Select the answer that most accurately describes the change in output.</small>
+                                    <div class= "form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="Question3Radios" id="question3" value="option1" onchange="setAnswer(event)">The text in the 'intro' section changes from normal to bold font.
+                                        </label>
+                                    </div>
+                                    <div class= "form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="Question3Radios" id="question3" value="option2" onchange="setAnswer(event)">Any non-bold text in the 'main' container is now bold.
+                                        </label>
+                                    </div>
+                                    <div class= "form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="Question3Radios" id="question3" value="option3" onchange="setAnswer(event)">The text in the 'intro' section changes to a smaller font size. 
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="form-group row">
+                        <legend>Guided Tinkering with CSS</legend>
+                        <div class="col-lg-6">
+                            <iframe width="100%" height="400" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <label for="question4" class="col-lg-2 col-form-label">Question 4</label>
+                                <div class="col-lg-10">
+                                    <small id="Question5Help" class="form-text text-muted">Change the value of the "text-decoration" attribute for the h4, h5, and h6 elements from "underline" to "none". What happens when you do that? Select best answer from the dropdown menu.</small>
+                                    <select class="form-control" id="question4" aria-describedby="Question5Help" onchange="setAnswer(event)" value="">
+                                        <option>The title, 'Meow meow meow meow' is no longer underlined.</option>
+                                        <option>The 'Grumpy Cat' text is no longer underlined.</option>
+                                        <option>The 'Nyan Cat' text is no longer underlined.</option>
+                                        <option>Both the 'Grumpy Cat' text and the 'Nyan Cat' text are no longer underlined.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label for="question5" class="col-lg-2 col-form-label">Question 5</label>
+                                <div class="col-lg-10">
+                                    <small id="Question6Help" class="form-text text-muted">Add another CSS styling rule to the h1, h2, h3, h4, h5, and h6 elements. Right below "font-weight: bold;" you should type "font-style: oblique;" What happens when you add this styling rule? Select all that apply by holding down the command/option key.</small>
+                                    <select multiple class="form-control" id="question5" aria-describedby="Question6Help" onchange="setAnswer(event)">
+                                        <option>The title, 'Meow meow meow meow' becomes italicized.</option>
+                                        <option>The 'Top 3 things cats hate' list becomes italicized.</option>
+                                        <option>The section titles, 'Introduction to Cats' and 'Cats Opinions' become italicized.</option>
+                                        <option>'Grumpy Cat' and 'Nyan Cat' become italicized.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <label for="question6" class="col-lg-2 col-form-label">Question 6</label>
+                                <div class="col-lg-10">
+                                    <small id="Question7Help" class="form-text text-muted">How would you change the color of the title, "Meow meow meow meow"? Copy-paste your CSS code here.</small>
+                                    <textarea class="form-control" id="question6" aria-describedby="Question7Help" rows="3" onchange="setAnswer(event)"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="form-group row">
+                        <legend>Student Information</legend>  
+                        <label for="InputName" class="col-lg-1 col-form-label">Name</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="InputName" placeholder="Your first and last name" onchange="setName()">
+                        </div>
+                        <label for="InputEmail" class="col-lg-1 col-form-label">Email</label>
+                        <div class="col-lg-2">
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Your school email" onchange="setEmail()">
+                        </div>
+                        
+                        <div class="col-lg-2">                                 <!-- had to format differently to fit "reset" button on same line -->
+                            <div class="row">
+                                <div class="col-lg-3"> 
+                                    <label for="InputDate" class="col-form-label">Date</label>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input class="form-control" type="date" id="InputDate" onchange="setDate()">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-2">
+                            <div class="form-check">
+                                <label class="form-check-label" id="checkbox-agreement">
+                                    <input type="checkbox" class="form-check-input pull-left" id="InputCheckbox" onchange="setTerms()">
+                                    I certify that the answers (above) are my own work.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button id="submitButton" type="submit" class="btn btn-primary" onclick="submitResponses(event)">Submit</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button id="resetButton" type="submit" class="btn btn-danger" disabled="true" onclick="resetResponses(event)">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </div>
+            
+            <div class="container-bottom">
+                <section id="navbar-support-resources">
+                    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Support Resources</a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="list-group-item-action">
+                                    <a href="https://www.freecodecamp.com/map-aside#nested-collapseHTML5andCSS" target="_blank" data-toggle="popover" data-trigger="hover" data-content="A website where you can complete online coding courses to learn a little bit about a new programming language." data-placement="auto top">
+                                        <i class="fa fa-lg fa-free-code-camp" aria-hidden="true"></i>Free Code Camp</a>
+                                </li>
+                                <li class="list-group-item-action">
+                                    <a href="https://codepen.io/" target="_blank" data-toggle="popover" data-trigger="hover" data-content="A website where you can write HTML, CSS, and Javascript code and instantly view your website in a web-browser." data-placement="auto top">
+                                        <i class="fa fa-lg fa-codepen" aria-hidden="true"></i>CodePen Text Editor</a>
+                                </li>
+                                <li class="list-group-item-action">
+                                    <a href="https://jsfiddle.net/" target="_blank" data-toggle="popover" data-trigger="hover" data-content="A website where you can write and debug HTML, CSS, and Javascript code and watch your code execture in real-time." data-placement="auto top">
+                                        <i class="fa fa-lg fa-jsfiddle" aria-hidden="true"></i>JSFiddle Text Editor</a>
+                                </li>
+                                <li class="list-group-item-action">
+                                    <a href="https://stackoverflow.com/" target="_blank" data-toggle="popover" data-trigger="hover" data-content="A website where you can collaborate with other coders, ask questions and receive assistance debugging your ongoing projects." data-placement="auto top">
+                                        <i class="fa fa-lg fa-stack-overflow" aria-hidden="true"></i>Stack Overflow Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </section> 
+            </div>  
+        </div>
+    </body>
+</html>
